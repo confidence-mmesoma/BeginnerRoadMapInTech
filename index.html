@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pathfinder // Clear Learning</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Tech Learning Roadmap</h1>
+            <p class="subtitle">One path|| One source|| Zero noise.</p>
+        </header>
+
+        <select id="roadmap-select">
+            <option value="">-- Choose a Path --</option>
+            <option value="frontend">Frontend Development</option>
+            <option value="backend">Backend Development</option>
+            <option value="ai">AI Automation</option>
+            <option value="data">Data Science</option>
+            <option value="mobile">Mobile App Dev</option>
+            <option value="cyber">Cybersecurity</option>
+            <option value="design">UI/UX Design</option>
+            <option value="devops">DevOps Engineering</option>
+        </select>
+
+        <div id="progress-container" class="hidden">
+            <div class="progress-stats">
+                <span id="progress-percent">0% Completed</span>
+                <button id="reset-btn" class="text-button">Reset Progress</button>
+            </div>
+            <div class="progress-bar-bg">
+                <div id="progress-bar-fill"></div>
+            </div>
+        </div>
+
+        <main id="roadmap-content">
+            <div id="empty-state">
+                <p>Select a roadmap above to begin your journey.</p>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
